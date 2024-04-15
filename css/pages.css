@@ -1,0 +1,83 @@
+@font-face {
+    font-family: geon;
+    src: url("../fonts/geon.otf");
+}
+
+:root{
+    --primary: white;
+    --secondary:orange;
+    --background:rgb(33, 38, 71);
+}
+
+.pages{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 100px;
+    border: 10px solid black;
+}
+
+.pages .number{
+    transition: 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    cursor: pointer;
+    padding: 8px;
+    padding-top: 10px;
+    border-radius: 3px;
+    background-color: gray;
+    font-weight: 100;
+    color: black;
+    margin: 5px;
+    font-weight: bolder;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.pages .number:hover{
+    font-size: 1.2rem;
+    transition: 0.1s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pages .number.dot:hover{
+    cursor:default;
+    font-size: 1rem;
+    box-shadow:none;
+}
+
+.pages .number.actual{
+    background-color: var(--secondary);
+}
+
+#loadingIndicator{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left: 0; top: 0;
+    padding-top: 10vh;
+    z-index: 1;
+    background-color: rgba(10, 12, 41, 0.5);
+}
+
+.loader {
+    display: flex;
+    border: 30px dashed #f3f3f3; /* Light grey */
+    border-radius: 500px;
+    height: 30vh;
+    width: 30vh;
+    margin: auto;
+    margin-top: 10vh;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

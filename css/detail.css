@@ -1,0 +1,14 @@
+.detailDetail{
+    display: flex;
+    font-family: geon;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    height: 100vh;
+    border: 5px solid black;
+}
+
+.detailDetail .imageDetail{
+    width: 100%;
+    border: 100px solid black;
+}
+
